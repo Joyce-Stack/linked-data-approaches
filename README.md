@@ -1,17 +1,17 @@
-** Introduction ** 
+**Introduction** 
 
 This is my own personal notes on what I've found out on the web for beginning to consider hypermedia approaches for linking data. I've relied on the wider community for their advice and findings and so I hope others will find this page a handy one stop shop. 
 
-** Acknowledgements ** 
+**Acknowledgements** 
 
 * [Niels Krijge Handy Comparsion Table ](http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html) 
 * [Kevin Sookocheff](https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/)
 * [Mike Stowe](http://blogs.mulesoft.com/dev/api-dev/api-best-practices-hypermedia-part-3/)  
 
 
-** Taken from Niels Krijge Blog **
+**Taken from Niels Krijge Blog**
 
-Legend can be found [here](http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html#hypermedia-specification-comparison)
+So grateful that somebody has already done a comparison. Legend can be found [here](http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html#hypermedia-specification-comparison)
 
 <table class="table table-striped small">
 
