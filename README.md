@@ -1,12 +1,17 @@
-hoosing a Hypermedia Type: HAL vs JSON-LD vs Collection+JSON vs Siren vs JSON API 
+** Introduction ** 
 
-Take from 
+This is my own personal notes on what I've found out on the web for beginning to consider hypermedia approaches for linking data. I've relied on the wider community for their advice and findings and so I hope others will find this page a handy one stop shop. 
 
-* http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html
-* https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/
-* http://blogs.mulesoft.com/dev/api-dev/api-best-practices-hypermedia-part-3/ 
-* Daisy Chaining - http://www.networkworld.com/article/3127356/cloud-computing/daisy-chaining-apis-makes-serverless-sense.html
+** Acknowledgements ** 
 
+* [Niels Krijge Handy Comparsion Table ](http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html) 
+* [Kevin Sookocheff](https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/)
+* [Mike Stowe](http://blogs.mulesoft.com/dev/api-dev/api-best-practices-hypermedia-part-3/)  
+
+
+** Taken from Niels Krijge Blog **
+
+Legend can be found [here](http://www.nielskrijger.com/#!/posts/2014-08-05-choosing-a-hypermedia-type.html#hypermedia-specification-comparison)
 
 <table class="table table-striped small">
 
@@ -199,6 +204,8 @@ Take from
 
 
 **JSON API**  
+Taken from Mike Stowes blog. 
+
 
 *Strengths*
 	
@@ -267,24 +274,3 @@ Take from
 
 
 
-
-
-
-
-**How to approach pagination in JSON-LD** 
-
-
-https://www.w3.org/community/hydra/wiki/Collection_Design
-
-
-
-
-
-Collection+JSON specifies search/filter queries (and is designed for CRUD, of course), but not really “workflow” queries. HAL seems to be more open in this regard (with various “_links”). Siren explicitly specifies “actions”, which is the clearest IMO.
-
-
-I find that specifying linked objects by their URI is very cool and desirable when it comes to GET-ing data. But slightly less cool when it comes to  setting it, in that in mandates the server to parse a full URL in order to do the usual stuff of storing some ref id in a column of a database. For instance, say a HAL “order” has a “_link” to “customer” : { "href": “http://host/customers/1234” }. It would be easier for the server to handle a store/update request with some kind of “customer”: { “id”: 1234 }, instead of parsing "href": “http://host/customers/1234”. But I understand it would break the homogeneity of the API and can live with it, of course.
-
-can we export into triples? 
-
-JSON-LD serialiser -> application/nquads (triplestore)
