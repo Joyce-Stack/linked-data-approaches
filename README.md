@@ -249,7 +249,7 @@ Taken from Mike Stowes blog.
 
 
 
-** JSON-LD ** 
+**JSON-LD** 
 
 *Strengths*
 
